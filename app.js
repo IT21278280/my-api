@@ -1,4 +1,5 @@
-require('dotenv').config(); // Import dotenv to manage environment variables
+require('dotenv').config();  // Ensure dotenv is loaded to access environment variables
+console.log(process.env.API_KEY); // Debugging: Check if the API_KEY is loaded correctly
 const express = require('express');
 const cors = require('cors');
 const app = express();
