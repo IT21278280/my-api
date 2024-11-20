@@ -11,7 +11,8 @@ app.get('/', (req, res) => {
 });
 
 app.get('/greet', (req, res) => {
-    const name = req.query.name || 'World';
+    // Get the 'name' query parameter and trim any extra spaces or newline characters
+    const name = (req.query.name || 'World').trim();
     res.json({ message: `Hello, ${name}!` });
 });
 
