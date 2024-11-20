@@ -1,19 +1,19 @@
 const express = require('express');
 const app = express();
 
-// Route for the base URL '/'
+// Root route
 app.get('/', (req, res) => {
-  res.send('Welcome to My API!');
+    res.send('Welcome to My API!');
 });
 
-// API endpoint for '/greet'
+// Greet route
 app.get('/greet', (req, res) => {
-  const name = req.query.name || 'World';
-  res.json({ message: `Hello, ${name}!` });
+    const name = req.query.name || 'World';
+    res.json({ message: `Hello, ${name}!` });
 });
 
-// Start the server
+// Use Railway's port or default to 8080
 const PORT = process.env.PORT || 8080;
-app.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+app.listen(PORT, '0.0.0.0', () => {
+    console.log(`Server is running on port ${PORT}`);
 });
