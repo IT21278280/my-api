@@ -1,17 +1,30 @@
 import React, { useState } from 'react';
-import { TextField, Button, Typography, Container } from '@mui/material';
+import { TextField, Button, Typography, Container, Alert } from '@mui/material';
 
 const App = () => {
     const [name, setName] = useState('');
     const [response, setResponse] = useState(null);
+    const [error, setError] = useState(null);
 
     const handleFetch = async () => {
+        // Reset previous error and response
+        setError(null);
+        setResponse(null);
+
         try {
-            const res = await fetch(`https://my-api-production-85c5.up.railway.app/greet?name=${name}`);
+            // Ensure name input is not empty
+            const trimmedName = name.trim() || 'World'; // Default to "World" if no name is provided
+            const res = await fetch(`https://my-api-production-85c5.up.railway.app/greet?name=${trimmedName}`);
+            
+            if (!res.ok) {
+                throw new Error(`HTTP error! Status: ${res.status}`);
+            }
+
             const data = await res.json();
             setResponse(data);
         } catch (error) {
             console.error('Error fetching data:', error);
+            setError('Failed to fetch greeting. Please try again later.');
         }
     };
 
@@ -36,8 +49,13 @@ const App = () => {
             >
                 Get Greeting
             </Button>
+            {error && (
+                <Alert severity="error" style={{ marginTop: '20px' }}>
+                    {error}
+                </Alert>
+            )}
             {response && (
-                <Typography variant="h6">
+                <Typography variant="h6" style={{ marginTop: '20px' }}>
                     {response.message}
                 </Typography>
             )}
