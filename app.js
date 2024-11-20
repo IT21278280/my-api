@@ -33,7 +33,7 @@ app.use(cors());
 const authenticateAPIKey = (req, res, next) => {
     const apiKey = req.headers['x-api-key'];  // API key sent in request header
 
-    if (!apiKey || apiKey !== process.env.API_KEY) {
+    if (!apiKey || apiKey !== process.env.REACT_APP_API_KEY) {
         return res.status(403).json({ error: 'Forbidden: Invalid API key' });
     }
     next();  // Proceed to the next middleware/route if the key is valid
