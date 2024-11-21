@@ -1,5 +1,5 @@
 #my-api-production-f735.up.railway.app
-
+![Uploading motivational_quote_instagram_1.png…]()
 # Greeting API Project
 This project is a full-stack application providing a **RESTful API** and a responsive **React-based UI** for generating personalized greeting messages. It includes **API key authentication** for secure access and uses **Material-UI** for modern, visually appealing components.
 
