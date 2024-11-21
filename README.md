@@ -40,28 +40,23 @@ This project is a full-stack application providing a **RESTful API** and a respo
 
 #### 1. Home Page
 This is the home page where users can enter their name and get a personalized greeting.
-![Home Page](./docs/screenshots/home-page.png)
+![Image Alt](image_url)
 
 #### 2. Greeting Message
 After entering a valid name and clicking "Get Greeting," the personalized greeting message is displayed.
-![Greeting Message](./docs/screenshots/greeting-message.png)
+![Image Alt](image_url)
 
-#### 3. Error Message (Invalid API Key)
-If an invalid API key is provided, the app displays an error message.
-![Error Message](./docs/screenshots/error-message.png)
 
 ---
 
 ### **Backend**
 
-#### 1. Backend Running
-This shows the backend server running successfully in the terminal.
-![Backend Running](./docs/screenshots/backend-running.png)
-
-#### 2. Postman Test - Successful Request
+#### 1. Postman Test - Successful Request
 A successful request made to the `/greet` endpoint in Postman.
-![Postman Test Success](./docs/screenshots/postman-success.png)
+![Image Alt](image_url)
 
-#### 3. Postman Test - Invalid API Key
+![Image Alt](image_url)
+
+#### 2. Postman Test - Invalid API Key
 A failed request due to an invalid API key, tested in Postman.
-![Postman Test Error](./docs/screenshots/postman-error.png)
+![Image Alt](image_url)
