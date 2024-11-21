@@ -40,11 +40,11 @@ This project is a full-stack application providing a **RESTful API** and a respo
 
 #### 1. Home Page
 This is the home page where users can enter their name and get a personalized greeting.
-![Image Alt](image_url)
+![Image Alt](https://github.com/IT21278280/my-api/blob/6099f95dae0e1e233f990f9885dcc47900155032/Home.png)
 
 #### 2. Greeting Message
 After entering a valid name and clicking "Get Greeting," the personalized greeting message is displayed.
-![Image Alt](image_url)
+![Image Alt](https://github.com/IT21278280/my-api/blob/6099f95dae0e1e233f990f9885dcc47900155032/Greeting.png)
 
 
 ---
@@ -53,10 +53,10 @@ After entering a valid name and clicking "Get Greeting," the personalized greeti
 
 #### 1. Postman Test - Successful Request
 A successful request made to the `/greet` endpoint in Postman.
-![Image Alt](image_url)
+![Image Alt](https://github.com/IT21278280/my-api/blob/6099f95dae0e1e233f990f9885dcc47900155032/Postman%20Test%20Success%201.png)
 
-![Image Alt](image_url)
+![Image Alt](https://github.com/IT21278280/my-api/blob/6099f95dae0e1e233f990f9885dcc47900155032/Postman%20Test%20Success%202.png)
 
 #### 2. Postman Test - Invalid API Key
 A failed request due to an invalid API key, tested in Postman.
-![Image Alt](image_url)
+![Image Alt](https://github.com/IT21278280/my-api/blob/6099f95dae0e1e233f990f9885dcc47900155032/Postman%20Test%20-%20Invalid%20API%20Key.png)
